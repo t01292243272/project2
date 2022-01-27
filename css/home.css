@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 13px;
+    color: #333;
+}
+
+body {
+    background: #fff;
+    ;
+}
+
+
+#header {
+    background: #4B4E51;
+}
+
+#logo,
+#search,
+#cart {
+    height: 60px;
+}
+
+#logo {
+    padding-top: 5px;
+}
+
+#logo h1 {
+    margin: 0;
+}
+
+#search input {
+    width: 50%;
+    border-radius: 3px 0 0 3px;
+}
+
+#search button {
+    border-radius: 0 3px 3px 0;
+    background: #FFCC00;
+    color: #333;
+}
+
+#search button:hover {
+    background: #C60A11;
+}
+
+#cart a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#cart span {
+    color: #333;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#cart {
+    text-align: right;
+}
+
+#cart a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#cart span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #FFCC00;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#menu {
+    overflow: hidden;
+    background: #FFF;
+}
+
+#menu ul {
+    margin: 0;
+}
+
+.menu-item {
+    float: left;
+    list-style: none;
+    padding: 15px 23px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-item a:hover {
+    color: #FFCC00;
+}
+
+.menu-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+#main,
+#sidebar {
+    margin-top: 10px;
+}
+
+#slide .carousel-inner {
+    border-radius: 3px !important;
+    margin-bottom: 20px;
+}
+
+
+#main h2 {
+    text-align: center;
+}
+
+/* external css: flickity.css */
+
+.carousel_product {
+    background: #4B4E51;
+    margin-bottom: 50px;
+    border-radius: 3px;
+}
+
+.carousel-cell {
+    width: 28%;
+    height: 250px;
+    margin-left: 35px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.banner-item {
+    width: 280px;
+    padding: 10px;
+    margin: 0 0 10px;
+}
+
+.banner-item img {
+    width: 265px;
+    height: 180px;
+    border-radius: 2px;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.banner-item:hover img {
+    transform: scale(1.05);
+}
+
+.banner-item a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.banner-item p {
+    color: #FFF;
+}
+.banner-item span {
+    font-weight: bold;
+    color: #FFCC00;
+}
+.banner-item h4{
+    text-align: center;
+}
+
+.products {
+    margin-top: 5px;
+}
+
+.products h3 {
+    font-size: 22px;
+    margin-bottom: 10p;
+}
+
+.product-list {
+    margin: 0 -2.5px;
+    background: #fff;
+}
+
+.product-item {
+    padding: 10px;
+    margin: 0 0 10px;
+    background: #fff;
+}
+
+.product-item img {
+    border-radius: 2px;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-item span {
+    font-weight: bold;
+    color: #EB1F27;
+}
+
+/*	Fix Flex-box	*/
+.product-list:last-child .product-item {
+    flex-grow: 0;
+    flex-basis: 32.6%;
+}
+
+.banner-item {
+    margin-bottom: 10px;
+}
+
+#footer-top {
+    margin-top: 20px;
+    background: #FFF;
+}
+
+#logo-2,
+#address,
+#service,
+#hotline {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#logo-2 p {
+    text-align: justify;
+}
+
+#logo-2 h2{
+    text-align: center;
+    background-color: #4B4E51;
+    border-radius: 3px;
+}
+
+#footer-top h3 {
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+#footer-bottom {
+    background: #1D1E24;
+    padding: 10px 0;
+}
+
+#footer-bottom p {
+    margin: 0;
+    color: #a1b1bc;
+}
+
+
+@media (max-width:992px) {
+    #banner {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    #slide {
+        display: none;
+    }
+
+    #cart {
+        text-align: left;
+    }
+
+    #header {
+        position: relative;
+    }
+
+    #header>button {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: #FFF;
+    }
+
+    .menu-item {
+        float: none;
+        border: none;
+        border-bottom: 1px solid #C60A11;
+    }
+}
+
+@media (min-width:768px) {
+    #menu {
+        display: block;
+    }
+
+    #header>button {
+        display: none;
+    }
+}
+
